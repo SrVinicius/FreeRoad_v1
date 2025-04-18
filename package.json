@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "sass": "sass scss/styles.scss css/styles.css",
-    "sass:watch": "sass scss/styles.scss css/styles.css --watch"
+    "sass": "sass scss:css",
+    "sass:watch": "sass --watch scss:css"
   },
   "keywords": [],
   "author": "",

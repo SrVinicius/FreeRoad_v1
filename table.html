@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciamento de combustível</title>
+    <link rel="stylesheet" href="css/table.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="top-bar" aria-label="Navegação principal">
+            <a href="index.html" class="home-icon" aria-label="Página inicial"></a>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <header>
+                <h1>Gerenciamento de combustível</h1>
+                <p class="subtitle">Armazene e analise o consumo de seu veículo</p>
+            </header>
+
+            <section class="section-title">
+                <span>Adições recentes</span>
+                <button class="add-week" id="toggle-add-semana" type="button">+ Add Semana</button>
+            </section>
+
+            <section id="add-semana-form" class="add-semana-form" style="display: none;">
+                <form class="form-box" autocomplete="off">
+                    <div class="form-row">
+                        <label for="custo">Custo (R$)</label>
+                        <input type="number" id="custo" name="custo" placeholder="100,00" required />
+                    </div>
+                    <div class="form-row">
+                        <label for="km">Quilometragem Atual (km)</label>
+                        <input type="number" id="km" name="km" placeholder="10000" required />
+                    </div>
+                    <div class="form-row">
+                        <label for="litros">Litros Abastecidos</label>
+                        <input type="number" id="litros" name="litros" placeholder="50" required />
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="adicionar">Adicionar Semana</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="table-wrapper">
+                <table class="table" aria-label="Tabela de registros de combustível">
+                    <thead>
+                        <tr class="table-row table-header">
+                            <th class="cell">Semana</th>
+                            <th class="cell">Custo</th>
+                            <th class="cell">Eficiência</th>
+                            <th class="cell details">Detalhes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-row expandable">
+                            <td class="cell">Sem. 1</td>
+                            <td class="cell">R$ 100,00</td>
+                            <td class="cell">10 km/L</td>
+                            <td class="cell details"><span class="arrow"></span></td>
+                        </tr>
+                        <tr class="expand-row">
+                            <td class="expand-cell" colspan="4">
+                                <div class="expand-info">
+                                    <span>Kms. Inicial<br><strong>11000 Km</strong></span>
+                                    <span>Kms. Final<br><strong>Não inserida</strong></span>
+                                    <span>Qtd. Abastecida<br><strong>45 L</strong></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-row expandable">
+                            <td class="cell">Sem. 2</td>
+                            <td class="cell">R$ 150,00</td>
+                            <td class="cell">9.1 km/L</td>
+                            <td class="cell details"><span class="arrow"></span></td>
+                        </tr>
+                        <tr class="expand-row">
+                            <td class="expand-cell" colspan="4">
+                                <div class="expand-info">
+                                    <span>Kms. Inicial<br><strong>11000 Km</strong></span>
+                                    <span>Kms. Final<br><strong>Não inserida</strong></span>
+                                    <span>Qtd. Abastecida<br><strong>45 L</strong></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-row expandable">
+                            <td class="cell">Sem. 3</td>
+                            <td class="cell">R$ 90,00</td>
+                            <td class="cell orange">Em andamento</td>
+                            <td class="cell details"><span class="arrow"></span></td>
+                        </tr>
+                        <tr class="expand-row">
+                            <td class="expand-cell" colspan="4">
+                                <div class="expand-info">
+                                    <span>Kms. Inicial<br><strong>11000 Km</strong></span>
+                                    <span>Kms. Final<br><strong>Não inserida</strong></span>
+                                    <span>Qtd. Abastecida<br><strong>45 L</strong></span>
+                                </div>
+                                <div class="add-final-km">
+                                    <label>Adicionar Quilometragem Final</label>
+                                    <div class="input-row">
+                                        <input type="text" placeholder="Quilometragem">
+                                        <button>Finalizar</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+    </main>
+    <script src="js/table.js"></script>
+</body>
+
+</html>
