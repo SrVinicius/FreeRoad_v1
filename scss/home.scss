@@ -1,0 +1,122 @@
+body, html {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .background-black {
+    background: #181818;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-central {
+    background: #f6f6f6;
+    border-radius: 32px;
+    border: 12px solid #181818;
+    width: 98vw;         
+    height: 85vh;
+    max-width: 1800px; 
+    max-height: 900px;
+    min-width: 320px;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    justify-content: space-between;
+  }
+  
+  .card-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 56px 0 56px;
+    box-sizing: border-box;
+  }
+  
+  .logo {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #181818;
+    letter-spacing: 0.5px;
+    margin: 0;
+  }
+  
+  .link-planos {
+    font-size: 1.1rem;
+    color: #181818;
+    text-decoration: underline;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: color .2s;
+    &:hover {
+      color: #000;
+    }
+  }
+  
+  .card-content {
+    width: 100%;
+    flex: 1;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  
+  .card-title {
+    font-size: 2.3rem;
+    font-weight: 400;
+    color: #181818;
+    text-align: center;
+    margin-bottom: 38px;
+  }
+  
+  .card-actions {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .btn {
+    font-size: 1.1rem;
+    border-radius: 14px;
+    padding: 10px 38px;
+    min-width: 140px;
+    border: 2px solid #181818;
+    cursor: pointer;
+    transition: background .2s, color .2s;
+  
+    &.btn-primary {
+      background: #181818;
+      color: #fff;
+      font-weight: 500;
+      border: 2px solid #181818;
+    }
+    &.btn-secondary {
+      background: #fff;
+      color: #181818;
+      font-weight: 400;
+      border: 2px solid #181818;
+    }
+    &:hover {
+      filter: brightness(0.96);
+    }
+  }
+  
+  .card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 28px;
+    margin-top: 10px;
+  }
+  
+  
